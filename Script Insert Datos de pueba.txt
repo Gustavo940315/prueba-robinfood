@@ -1,0 +1,12 @@
+INSERT INTO `cliente` (`cliente_id`, `primer_nombre`, `segundo_nombre`, `primer_apellido`, `segundo_apellido`, `celular`) VALUES (NULL, 'Andrea', 'Catalina', 'Rojas', 'Lopez', '3091231222');
+
+INSERT INTO `tipo_pregunta` (`tipo_pregunta_id`, `detalle_tipo_pregunta`) VALUES (NULL, 'S-N'), (NULL, 'texto'), (NULL, 'lista');
+INSERT INTO `pregunta` (`pregunta_id`, `tipo_pregunta_id`, `titulo`) VALUES (NULL, '2', '¿ Como estuvo tu pedido ?');
+INSERT INTO `pregunta` (`pregunta_id`, `tipo_pregunta_id`, `titulo`) VALUES (NULL, '2', '¿ Que tan rapida fue tu entrega ?');
+INSERT INTO `pregunta` (`pregunta_id`, `tipo_pregunta_id`, `titulo`) VALUES (NULL, '1', '¿ Te gusto el servicio ?');
+INSERT INTO `pregunta` (`pregunta_id`, `tipo_pregunta_id`, `titulo`) VALUES (NULL, '1', '¿ Te gusto el menu ?');
+INSERT INTO `pregunta` (`pregunta_id`, `tipo_pregunta_id`, `titulo`) VALUES (NULL, '3', '¿ Recomendarias el lugar de donde ordenaste tu comida ?');
+INSERT INTO `pregunta` (`pregunta_id`, `tipo_pregunta_id`, `titulo`) VALUES (NULL, '3', '¿ Tienes alguna sugerencia ?');
+
+INSERT INTO `items_pregunta` (`items_pregunta_id`, `pregunta_id`, `opcion`) VALUES (NULL, '5', '1'), (NULL, '5', '2'), (NULL, '5', '3'), (NULL, '5', '4'), (NULL, '5', '5');
+INSERT INTO `items_pregunta` (`items_pregunta_id`, `pregunta_id`, `opcion`) VALUES (NULL, '6', 'Amigo'), (NULL, '6', 'publicidad'), (NULL, '6', 'internet'), (NULL, '6', 'redSocial');

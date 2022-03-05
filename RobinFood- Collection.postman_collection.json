@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "43eb5f4c-84bf-4791-b9ae-9b5b33f36b0f",
+		"name": "RobinFood- Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consultar Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"primerNombre\": \"Juan\",\n  \"segundoNombre\": \"David\",\n  \"primerApellido\": \"Lopez\",\n  \"segundoApellido\": \"Lopez\",\n  \"celular\": \"3057328423\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cliente/crear-cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"crear-cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"primerNombre\": \"Julian\",\n  \"segundoNombre\": \"David\",\n  \"primerApellido\": \"Suarez\",\n  \"segundoApellido\": \"Suarez\",\n  \"celular\": \"3118553212\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cliente/actualizar-cliente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"actualizar-cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cliente/eliminar-cliente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"eliminar-cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Encuesta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/encuesta/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"encuesta",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Encuesta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/encuesta/preguntas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"encuesta",
+						"preguntas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar Respuestas de encuestas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"preguntaId\": 1,\n    \"respuesta\": \"Muy Rica\"\n  },\n  {\n    \"preguntaId\": 2,\n    \"respuesta\": \"muy buen servicio, gracias\"\n  },\n  {\n    \"preguntaId\": 3,\n    \"respuesta\": \"S\"\n  },\n  {\n    \"preguntaId\": 4,\n    \"respuesta\": \"N\"\n  },\n  {\n    \"preguntaId\": 5,\n    \"respuesta\": \"4\"\n  },\n  {\n    \"preguntaId\": 6,\n    \"respuesta\": \"Amigo\"\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/encuesta/guardar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"encuesta",
+						"guardar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
